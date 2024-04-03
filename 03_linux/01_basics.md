@@ -43,6 +43,24 @@ For any linux command you can check its usage and different input flags it expec
 
 9.  `rm -r <fileName>` : this -r flag enables the rm to recusively remove all the contents of the folder and then the folder itself.
 
+10. `ls | grep python` : this will actually pass the output of ls as an input to grep, grep does a substring search of python on the output of ls.
+
+11. `ls > new.txt` : whatever is the result of ls will be dumped into new.txt, nothing will be printed in the console. If new.txt has some content already then that will be replaced.
+
+12. `ls >> new.txt` : whatever is the result of ls will be dumped into new.txt, nothing will be printed on the console. If new.txt has some content already then the new content will be appended.
+
+13. `<command1> && <command2>` : this executes command1 followed by command2 considering command1 has no errors.
+
+14. `cp file1 file2` : copies the content of the file1 to file2.
+
+15. `mv file1 file2` : moves(cut paste) the file1 to a new position as file2. This can also help us to rename a file.
+
+16. `tar -cf archieve.zip 1.txt 2.txt` : this command will add all the files mentioned after archive.zip into the zipped archive as mentioned.
+
+17. `tar -zcf archive1.zip 1.txt 2.txt` : this commmand will not only add the files to the zip but also compress them.
+
+18. `tar xf archive1.zip -C extract` : all the content of archive1 will be extracted into the extract folder.
+
 `VIM`
 
 1. `vim <filename` : this will create a file (if it doesn't exist) and then open it in the vim editor in the normal mode. In normal mode we can't do changes to the file but we read it and navigate it. You can also use "vi <fileName>" to do the same.
